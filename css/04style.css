@@ -1,0 +1,25 @@
+    /* external CSS (외부 CSS) : css 파일에 스타일 코드 작성*/
+    /* html에 적용하려면  */
+    /* link rel="stylesheet" href="파일명" */
+
+    h1 {
+    color:bisque;
+     background-color: rgb(120, 30, 210);
+    }
+   
+    p{
+        color:gold; 
+        background-color: cyan;
+        font-size: 25px;
+    }
+
+    h2{
+        color:blue;
+        background-color: white;
+        font-size: 22px;
+    }
+    body {
+        background-color: lightblue;
+      }
+      
+    
