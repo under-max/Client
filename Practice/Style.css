@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(129, 159, 171);
+}
+
+li {
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+    background-color: rgb(0,0,0);
+    
+    
+}
+p{
+    font-size: 20px;
+    color:black;
+    
+}
+
+
