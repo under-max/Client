@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        li{
+            text-decoration: underline;
+        }
+        /* >자식 선택자 */
+        /* li를 선택할건데 ul안에 들어가 있는 li를 의미함 */
+        ul>li {
+            color:blue;
+        }
+        .todo >li {
+            background-color: yellow;
+
+        }
+        /* 부모요소가 note 클래스인 li 요소들의 정렬을 오른쪽  */
+        
+        .note > li {
+            text-align: right;
+        }
+        
+    </style>
+    <body>
+        <!-- ul*2>li*3lorem1 -->
+        <ul class="todo">
+            <li>Lorem, ipsum dolor.</li>
+            <li>Blanditiis, libero ratione.</li>
+            <li>Veniam, sapiente vel?</li>
+        </ul>
+        <ul class="note">
+            <li>Lorem, ipsum dolor.</li>
+            <li>Totam, eius consectetur.</li>
+            <li>Hic, optio voluptatum?</li>
+        </ul>     
+
+
+    </body>
+</head>
+</html>

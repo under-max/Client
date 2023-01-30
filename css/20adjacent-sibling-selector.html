@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        p{
+            color:blue;
+        }
+        /* 인정형제선택자 p 직전(앞)에 h1 이 있어야 함*/
+        
+        h1 + p {
+            background-color: yellow;
+            color: coral;
+        }
+    </style>
+</head>
+<head>
+    <!-- (h1>lorem1^p)*2+p>lorem3 -->
+    <h1>Lorem, ipsum dolor.</h1>
+    <p>Lorem, ipsum.</p>
+    <h1>Laudantium, exercitationem? Labore.</h1>
+    <p>Qui, aliquid!</p>
+    <p>Lorem, ipsum.</p>
+</head>
+</html>

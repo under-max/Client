@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #preTag {
+            font-size: 18px;
+            text-align: left;
+            margin-left: 0px;
+            
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Selector</li>
+         <p>Id 생성 규칙<br>
+            1.숫자로 시작하면 안됨 startTag id="name" <br> 
+            2.대소문자 구분함<br>
+            3.빈칸 넣을 수 없음<br> 
+            4.한페이지에 같은 ud 여러번 사용할 수 없음<br>
+            5.특수문자는 -,_만 사용  아이디는 하나의 프로퍼티당 하나의 아이디만 입력 가능<br>
+            6.Style 란에서 부를때는 #name으로 부를 수 있음<br>
+            6.emmet ex) h1#note*5>lorem3</p>
+        <li>Class</li>
+            <p>1. class 속성은 영문숫자 - _ 조합으로 작성<br>
+            2. 중복 가능<br>
+            3. 하나의 요소는 빈칸으로 구분한 여러 클래스를 가질 수 있음<br>
+            4. ID 는 하나만 지정 가능 하지만 Class 는 여러개 묶어서 지정 가능함<br> 
+            5. StartTag class = "name"<br>
+            6. Style 란에서 부를때 .class name 으로 부름 .class name name 으로 2개의 클레스 식으로도 지정 가능 복수지정도 가능<br>
+            7.Emmet -  h1.note*5>lorem3 <br>
+            8.우선순위는 ID > Class > element</p>
+        <li>Child-Selector</li>
+        <pre id = "preTag">
+            1. ">" 자식선택자를 의미함 
+            2. ex)ul > li (li중에서 ul 안에 들어가 있는 li를 의미 이중 ul이 부모)
+            3. ex> .todo > li (todo Class 안에 들어가 있는 li를 의미 이중 Class="todo"가 부모)
+           
+           
+        </pre>
+        <li>Div</li>
+        <p>
+            1. 콘텐트를 나눌떄 사용 하는 요소 (레이아웃 용)<br>
+            2. 브라우저 기본 스타일이 없음 <br>
+            3. emmet 에서 태그명 생략하면 div <br>
+        </p>
+        <li>Attribute_Selector</li>
+        <p>
+            title 속성이 있는 요소들 <br>
+            [title] {} 로 표현<br>
+            title 속성이있는 p 요소들<br>
+            p[title] {} 로 표현<br>
+            h1을 조상으로 둔 title 속성이 있는 요소들<br>
+            h1 [title] {}
+        </p>
+    </ol>
+</body>
+</html>

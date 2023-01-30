@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #my head{
+            color:blue;
+        }
+
+        #myhead {
+            color:yellow;
+        }
+
+        #myHead {
+            color:green;
+        }
+
+        #yourHead{
+            text-decoration: underline;
+        }
+
+        #3head {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- 중복되지 않게 영문 숫자 - _ 만 사용 -->
+    <h1 id="my head">Lorem, ipsum dolor.</h1>
+    <h1 id="myhead">Lorem ipsum dolor sit.</h1>
+    <h1 id = "myHead">Lorem, ipsum dolor.</h1>
+    <h1 id="yourHead">Lorem ipsum dolor sit amet.</h1>
+    <h1 id="yourHead">Lorem ipsum dolor sit amet.</h1>
+
+    <h1 id="3head">Lorem, ipsum dolor.</h1>
+
+    <!-- emmet에서 : #이 id 속성임 -->
+    <!-- ex)h1#hishead -->
+    <h1 id="hishead"></h1>
+
+    <!-- ex)h1#yourhhead -->
+    <h1 id="your_head"></h1>
+
+    <!-- ex)h1#herhead>lorem3 -->
+    <h1 id="herhead">Lorem, ipsum dolor.</h1>
+
+    <!-- h1#head$*4 -->
+    <h1 id="head1"></h1>
+    <h1 id="head2"></h1>
+    <h1 id="head3"></h1>
+    <h1 id="head4"></h1>
+
+    <!-- h1#jackHead$*5>lorem5 -->
+    <h1 id="jackHead1">Lorem, ipsum dolor.</h1>
+    <h1 id="jackHead2">Sapiente, beatae hic?</h1>
+    <h1 id="jackHead3">Vitae, sequi placeat!</h1>
+    <h1 id="jackHead4">Cupiditate, doloremque rem?</h1>
+    <h1 id="jackHead5">Saepe, eos dolorem.</h1>
+</body>
+</html>

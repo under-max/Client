@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            color: blue;
+
+        }
+        /* title 속성이 있는 요소들 */
+        [title]{
+            text-decoration: underline;
+        }
+        p[title]{
+            border: 5px solid;
+        }
+        h1 [title]{
+            border: 5px dotted;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem, <span title="inside">ipsum</span> dolor.</h1>
+    <h1 title="hello">Lorem ipsum dolor sit amet.</h1>
+    <h1 title="world">Atque autem deserunt debitis consequuntur!</h1>
+    <h1>Animi laudantium natus eligendi beatae?</h1>
+    <h1>Officia cum commodi laboriosam praesentium.</h1>
+    <h1>Corporis id voluptatem laborum dolorem.</h1>
+
+    <p title="hi css">Lorem ipsum dolor sit amet.</p>
+    <p>Repellendus sequi error autem repellat.</p>
+    <p>Voluptatibus sequi quod eveniet voluptates.</p>
+</body>
+</html>
