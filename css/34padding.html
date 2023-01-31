@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div{
+            border: 5px solid #000;
+            
+        }
+
+        div:nth-child(even){
+            color:blue;
+        }
+        #box1 {
+            padding-top: 7px;
+        }
+        /* #box2 오른쪽 패딩 10px */
+        /* #box3 아래쪽 패딩 20px */
+        /* #box4 왼쪽 패딩 15px */
+        #box2 {
+            padding-right: 10px;
+        }
+        #box3 {
+            padding-bottom: 20px;
+        }
+        #box4 {
+            padding-left: 15px;
+        }
+
+        /* #box5 위쪽 패딩 20px */
+        /* #box5 오른쪽 패딩 10px */
+        /* #box5 아래 패딩 7px */
+        /* #box5 왼쪽 패딩 15px */
+        #box5 {
+            padding-top: 20px;
+            padding-right: 10px;
+            padding-bottom: 7px;
+            padding-left: 15px;
+        }
+
+        #box6 {
+            /* 상 좌 하 우 */
+            padding: 20px 10px 7px 15px;
+        }
+
+        #box7 {
+            /* 상 좌우 하 */
+            padding: 20px 10px 7px;
+        }
+
+        #box7 {
+            /* 상하 좌우 */
+            padding: 20px 10px;
+        }
+
+        #box8 {
+            /* 상하좌우 */
+            padding: 20;
+        }
+        #box9 {
+            /* margin-bottom: 1000px; */
+            width: 100px;
+            margin: auto;
+            /* height: 200px; */
+            text-align: center;
+            font-size: 16px;
+            padding-top: 89.25px;
+            padding-bottom: 89.25px;
+            
+            /* 텍스트 가운데 위치하는 방법 패딩으로 조절도 가능 */
+        }
+        
+        
+    </style>
+<body>
+    <div>
+        <div id="box1">box1</div>
+        <div id="box2">box2</div>
+        <div id="box3">box3</div>
+        <div id="box4">box4</div>
+        <div id="box5">box5</div>
+        <div id="box6">box6</div>
+        <div id="box7">box7</div>
+        <div id="box8">box8</div>
+        <div id="box9">box9</div>
+        
+    </div>
+</body>
+</html>
