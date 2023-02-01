@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .table-header-row,
+        .table-data-row {
+            display: flex;
+            border-bottom: 3px solid gray;
+        }
+
+        .table-header-row {
+            border-top: 3px solid black;
+        }
+
+        .table-header-cell{
+            text-align: center;
+            font-weight: bold;
+            
+        }
+
+        .table-header-cell,
+        .table-data-cell {
+            width: 100px;
+            padding: 7px 5px;
+        }
+/* table-header-cell 2번재 자식과, table-data-cecll 2번쨰 자식 선택자 */
+        .table-header-cell:nth-child(2),
+        .table-data-cell:nth-child(2) {
+            flex:1
+        }
+
+    </style>
+<body>
+    <div class="table">
+        <div class="table-header-row">
+            <div class="table-header-cell">Lorem.</div>
+            <div class="table-header-cell">Nobis.</div>
+            <div class="table-header-cell">Illo!</div>
+            <div class="table-header-cell">Quo!</div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">Lorem.</div>
+            <div class="table-data-cell">Labore.</div>
+            <div class="table-data-cell">Cum.</div>
+            <div class="table-data-cell">Illo?</div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">Lorem.</div>
+            <div class="table-data-cell">Delectus!</div>
+            <div class="table-data-cell">Officia.</div>
+            <div class="table-data-cell">Enim.</div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">Lorem.</div>
+            <div class="table-data-cell">Pariatur.</div>
+            <div class="table-data-cell">Mollitia.</div>
+            <div class="table-data-cell">Minima!</div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">Lorem.</div>
+            <div class="table-data-cell">Velit.</div>
+            <div class="table-data-cell">Sunt.</div>
+            <div class="table-data-cell">Odio.</div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">Lorem.</div>
+            <div class="table-data-cell">Delectus.</div>
+            <div class="table-data-cell">Quae!</div>
+            <div class="table-data-cell">Maxime?</div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">Lorem.</div>
+            <div class="table-data-cell">Placeat.</div>
+            <div class="table-data-cell">Cumque.</div>
+            <div class="table-data-cell">Magnam.</div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">Lorem.</div>
+            <div class="table-data-cell">Odit!</div>
+            <div class="table-data-cell">Distinctio!</div>
+            <div class="table-data-cell">Nemo.</div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">Lorem.</div>
+            <div class="table-data-cell">Aut!</div>
+            <div class="table-data-cell">Qui.</div>
+            <div class="table-data-cell">Nulla.</div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">Lorem.</div>
+            <div class="table-data-cell">Maiores.</div>
+            <div class="table-data-cell">Cum.</div>
+            <div class="table-data-cell">Dolor?</div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">Lorem.</div>
+            <div class="table-data-cell">Dolores?</div>
+            <div class="table-data-cell">Assumenda.</div>
+            <div class="table-data-cell">Porro!</div>
+        </div>
+    </div>
+</body>
+</html>
+
