@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let num1 = +prompt("첫번째 수를 입력하세요", 1);
+        let num2 = +prompt("두번째 수를 입력하세요", 10);
+        //num1과 num2 사이의 수를 더한 값 출력 
+
+
+        //ex 2 , 5
+        // 2345 - sum에서 계산 
+        //범위 -- num1 이상 num2이하 
+        //사용자가 10을 넣고 2번째 1을 넣었을때도 동작하게 만들어보기? 
+        let sum = 0;
+        
+        if(num1 < num2){
+            for(let a = num1; a <= num2; a++){
+            sum += a;
+            }
+        }
+        else if(num1 > num2){
+            for(let a = num2; a <= num1; a++){
+            sum += a;
+            }
+        }
+        else if (num1 === num2){
+            sum = num1 + num2;
+        }
+        else{
+            console.log("정확한 숫자를 입력하세요");
+        }
+        
+       
+        console.log(`${num1}과 ${num2}의 값은 ${sum}입니다`);
+
+    </script>
+</body>
+</html>
