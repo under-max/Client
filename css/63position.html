@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h1 {
+            background-color: yellow;
+        }
+        h1:nth-child(odd){
+            background-color: skyblue;
+        }
+
+        #head {
+            /* 포지션된 요소가 아니다. */
+            position: static;
+            left:50px;
+        }
+
+        #head2 {
+                /* relatice 원래 위치 기준으로 position 가능 */
+                /* relative 적용된 반대방향으로 움직임 */
+            position: relative;
+            left:50px;
+            
+        }
+        #head3 {
+            /* 원래 위치 기준에서 위로 30px 이동 */
+            position: relative;
+            bottom:30px;
+        }
+
+        #head4 {
+            /* 원래 위치 기준에서 왼쪽으로 10px 이동 */
+            position: relative;
+            right:10px;
+        }
+
+        #head5 {
+            /* 원래 위치 기준에서 아래로 20px 이동 */
+            position: relative;
+            top:20px;
+
+        }
+
+        #head6 {
+            position:relative;
+            top:50px;
+            bottom:50px;
+        }
+
+        #head7:hover {
+            position:relative;
+            bottom:5px;
+        }
+
+    </style>
+<body>
+    <h1 id="head1">
+        Lorem, ipsum.
+    </h1>
+    <h1 id="head2">
+        Voluptatum, explicabo!
+    </h1>
+    <h1 id="head3">
+        Asperiores, odio.
+    </h1>
+    <h1 id="head4">
+        Aut, reiciendis.
+    </h1>
+    <h1 id="head5">
+        Delectus, eum.
+    </h1>
+    <h1 id="head6">
+        Voluptatum, veritatis.
+    </h1>
+    <h1 id="head7">
+        Asperiores, omnis?
+    </h1>
+    <h1 id="head8">
+        Totam, expedita!
+    </h1>
+    <h1 id="head9">
+        Fuga, quo!
+    </h1>
+    <h1 id="head10">
+        Ut, magni?
+    </h1>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        //비교연산자 
+        //연산결과 : 두항을 비교한 결과 
+        //==, ===, != . < , <=, >, >=
+        // 결과값이 같은가? 
+        // 결과 값이 같으면 true, 다르면 false 
+
+        let a = 3;
+        let b = 5; 
+        let c = a == b;
+        console.log(c);
+
+        let d = a == 3;
+        console.log(d);
+
+        let e = "Java";
+        let f = "Javascript";
+
+        console.log(e == f); //flase
+        console.log(e == "java"); //true
+        console.log(e == 'java'); //true
+        console.log(e == `java`); //true
+
+        let g = 33;
+        let h = "33";
+        console.log(g == h); // true 값이 같은지 확인 하기 때문 값만 비교하기 떄문에 실수할 확률이 있음 
+
+        // === : 값과 타입이 같으면 true . 다르면 false 
+        console.log(g === h);
+
+        // 값이 같지 않으면 true, 같으면 false 
+
+        let i = 3; 
+        let j = 5;
+        console.log(i != j); //true
+
+        console.log(i != 3); //false
+
+        // !== : 값이 같지 않거나 타입이 같지 않으면 true 값 타입 
+        console.log(i !== j); //true
+        console.log(i !== "3");//true
+        console.log(i !== 3); //false
+
+        //< : 왼쪽항이 작으면 true 
+        let k = 5; 
+        console.log(k < 6);//true
+        console.log(k < 5); //false 
+        console.log(k < 4); //false 
+
+        // <= : 왼쪽항이 작거나 같으면 true
+        console.log(k <= 6); //true
+        console.log(k <= 5); //true
+        console.log(k <= 4); //false 
+
+        // > : 왼쪽항이 크면 true
+        console.log(k > 6); //false
+        console.log(k > 5); //false
+        console.log(k > 4); //true
+
+        // >= :왼쪽 항이 크거나 같으면 true
+        console.log(k >= 6); //false
+        console.log(k >= 5); //true
+        console.log(k >= 4); //true
+
+        let x = 1;
+        let y = 2;
+        let z = a < b ? true : false
+        console.log(z);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // object 여러 값(속성 property )를 갖는 data type
+        let name = "jhon"; //하나의 값
+        let age = 30; //하나의 값 
+
+        // 객체는 name 속성과 age 속성을 갖는다
+        let a = {name: "jane", age:40}; //여러값 
+        console.log(name);
+        console.log(age);
+        
+        console.log(a);
+        console.log(a.name); 
+        console.log(a.age);
+
+        name = "donald"
+        a.name = "mary"
+        console.log(name);
+        console.log(a.name);
+
+        a.age = 50;
+        console.log(a.age);
+        // 프로퍼티(array) 추가 하고 싶을때  와 그냥 넣어서 하면 됨 신기능 
+        // java 의 경우 system.arraycopy (a,0,b,0,a.length())
+        // int[] a = new int[3] / int[] b = new int[] 
+        a.address = "seoul";
+        console.log(a.address);
+        
+        console.log(a.birth);
+        
+
+    </script>
+</body>
+</html>

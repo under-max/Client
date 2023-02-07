@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let a = 3;
+        console.log(a);
+
+        a = 5;
+        console.log(a);
+
+        a = 0.111;
+        console.log(a);
+
+        // -(2 53승) ~ (2의 53승) -1까지
+        a = 9007199254740991; //이 이상 넘어가고 싶으면 bigint
+        console.log(a);
+
+        let b = a + 1;
+        console.log(b);
+
+        let c = a + 2;
+        console.log(c);
+
+        let sum = 0;
+        for (i = 1; i<=54; i++)
+        {
+            sum = 2*i;
+        }
+        console.log(sum);
+
+        //infinity
+        let d = 1 / 2;
+        console.log(d);
+
+        let e = 1/0; //infinity가 됨 0으로 나눌수 없으므로 무한대 
+        console.log(e);
+        
+        let f = -1 / 0; //-infinity 나옴 
+        console.log(f);
+
+        //NaN (not a number)
+        
+        let g = 15 % 2; // 나머지 구하는 연산자 
+        console.log(g);
+
+        let h = 15 % 0 ; // 15를 0으로 나오면 몫을 나눌수 없으니 NaN
+        console.log(h);
+     </script>
+</body>
+</html>
