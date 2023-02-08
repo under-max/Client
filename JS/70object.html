@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,47 +7,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
     </style>
-
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = "java";
-        let b = "html";
-        let c = "css";
-        let d = "javascript";
-        let e = "react";
+        let a = ['java', 'spring', 55];
+        console.log(a[0]);
+        console.log(a[2]);
 
-        console.log(a);
-        console.log(b);
-        console.log(c);
-        console.log(d);
-        console.log(e);
+        //object 여러 값을 저장한 자료 형태
+        //{}사용
+        //각 값의 이름을 명시 (property)
+        console.log("----------------");
+        let b = {lang: "java", frame: "spring", age: 55};
 
-        // array 여러값을 저장한 자료형
-        console.log("array 사용 ******");
-        let f = ["java", "css", "html", "vue", "react"];
+        
+        console.log(b.lang); //값을 읽을때 이걸 주로 씀 
+        console.log(b.frame);
+        console.log(b.age);
 
-        for (let i = 0; i < f.length; i++) {
-            console.log(f[i]);
-        }
-
-        // 여러값을 구분없이 가질 수 있음 
-        let g = [3, "css", true, 3.14, null, undefined];
-
-        //빈 배열을 가질 수 있음 
-        let h = [];
-
-        //코트가 길면 각 값 앞에서 새로운 줄 입력 
-        let i = [
-            "javascript",
-            "html은 페이지의 구조를 나타낸다.",
-            "css는 html요소를 꾸미는 코드다."
-        ];
-
-
+        console.log("-----------------");//거의 안씀 
+        console.log(b["lang"]);
+        console.log(b["frame"]);
+        console.log(b["age"]);
 
     </script>
 </body>
-
 </html>

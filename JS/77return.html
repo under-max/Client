@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,47 +7,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
     </style>
-
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = "java";
-        let b = "html";
-        let c = "css";
-        let d = "javascript";
-        let e = "react";
-
-        console.log(a);
-        console.log(b);
-        console.log(c);
-        console.log(d);
-        console.log(e);
-
-        // array 여러값을 저장한 자료형
-        console.log("array 사용 ******");
-        let f = ["java", "css", "html", "vue", "react"];
-
-        for (let i = 0; i < f.length; i++) {
-            console.log(f[i]);
+        function a(param){
+            console.log("어떤일을 함");
         }
 
-        // 여러값을 구분없이 가질 수 있음 
-        let g = [3, "css", true, 3.14, null, undefined];
+        a(3);
+        a(4);
 
-        //빈 배열을 가질 수 있음 
-        let h = [];
+        function b(param) {
+            console.log("B함수가 일함");
 
-        //코트가 길면 각 값 앞에서 새로운 줄 입력 
-        let i = [
-            "javascript",
-            "html은 페이지의 구조를 나타낸다.",
-            "css는 html요소를 꾸미는 코드다."
-        ];
+            //함수의 실행 결과 
+            
+            return "어떤결과" // 결과값(output)을 return(반환)함 
+        }
+        b(5);
+        b(6);
 
+        let r1 = a(); //결과 없음
+        let r2 = b(); //결과 있음 (return의 오른쪽 값)
+        console.log(r1);
+        console.log(r2); 
+        console.log(b());
 
+        function c(num1, num2) {
+            console.log("값지나가욧");
+            console.log("------------");
+            return num1 + num2
+        }
+
+        console.log(c(1,4));
 
     </script>
 </body>
-
 </html>
