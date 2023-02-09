@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+<body>
+    <input type="text" id="input1">
+    <button onclick="addList();">추가</button>
+    <ul id="list1">
+        <li>
+            Lorem.
+        </li>
+        <li>
+            Saepe?
+        </li>
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        //while 문 없이 
+        function addList() {
+            let text = document.querySelector("#input1").value; //1.inpu1 아이디를 가진 value를 얻기
+            let li = document.createElement("li");  //2.새 li 요소 만들고 (li를 create 할 변수 할당)
+            li.textContent = text; //3.새 li 요소의 textContent를 1에서 얻은 값으로 할당 / input에서 입력된 value 를 li의 text에 할당
+            let ul = document.querySelector("#list1"); //4. #list1요소 얻고 
+            ul.append(li);  //5. 4에서 얻은 요소 aapend
+            
+
+
+        }
+
+        
+    </script>
+</body>
+</html>
