@@ -14,8 +14,23 @@
     <button id="delete">삭제</button>
     <ul id="list1"></ul>
 
-   
+    <hr>
+    <input type="text" id="input2">
+    <ul id="list2"></ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        //Jquery
+        $("#input2").keyup(function (e){
+            if (e.key ==="Enter")
+            $("#list2").append(`<li>${$(this).val()}</li>`);
+            
+            $(this).val("");
+        })
+        
+
+        //보통의 JavaScript 코드 (vanilla JavaScript)
         let count = 0;
 
 
@@ -33,9 +48,15 @@
 
         document.querySelector("#delete").addEventListener("click", function () {
             let li = document.querySelector(`.num${--count}`) //대상선택 현재 count 값이 +1만큼 크기에 count 앞에서 --
-            li.remove();
             
             console.log(count);
+            if(count >= 0){
+                li.remove();
+            } else if (count <= 0){
+                alert("지울 대상이 없습니다");
+                count = 0;
+            }
+            
 
         })
     </script>
