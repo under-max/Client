@@ -27,6 +27,7 @@ else:
             title = anchor.find('span', class_='title') #find 는 결과를 가져옴 find all 은 리스트를 가져옴 
             #print(company.string, kind.string, region.string, title.string)
             job_data = {
+                'link' : f"https://weworkremotely.com/{link}", #.string 쓰면 tag지워줌 
                 "company" : company.string,
                 "resign" : region.string,
                 'position' : title.string
