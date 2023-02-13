@@ -8,13 +8,27 @@
     <style>
     </style>
 <body>
-    
+    <h1 id="head1">
+        Lorem, ipsum.
+        <span>
+            Lorem.
+        </span>
+    </h1>
+    <h1 id="head2">
+        Nobis, debitis.
+        <span>
+            Maxime.
+        </span>
+    </h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let s = "java";
-        let skip = "script";
-        let index = 1;
+        let html1 = $("#head1").html();
+        console.log(html1);
+
+        console.log($("#head2").html());
+
+        console.log($("span").html());
 
     </script>
 </body>

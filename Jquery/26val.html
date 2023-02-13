@@ -8,14 +8,33 @@
     <style>
     </style>
 <body>
-    
+    <!-- div*3>input#input$ -->
+    <div>
+        <input type="text" id="input1" value="Hello">
+    </div>
+    <div>
+        <input type="text" id="input2" placeholder="Hi">
+    </div>
+    <div>
+        <input type="text" id="input3">
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let s = "java";
-        let skip = "script";
-        let index = 1;
+        let val1 = $("#input1").val();
+        console.log(val1);
 
+        $("#input2").keyup(function() {
+            console.log($("#input2").val());
+        });
+
+        $("#input3").keyup(function (e) {
+            // console.log($("#input3").val());
+            if (e.key === "Enter"){
+            console.log($(this).val());
+            }
+        });
+        
     </script>
 </body>
 </html>

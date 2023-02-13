@@ -6,16 +6,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        div{
+            padding: 5px;
+            border: 1px solid black;
+            
+        }
+
+        .red {
+            border: 5px solid red;
+        }
+
+        .blue {
+            border: 5px solid blue;
+        }
+
+        .green {
+            border: 5px solid green;
+        }
     </style>
 <body>
-    
+        <!-- span>lorem1^div>span>lorem1^^span>lorem1 -->
+        <span>
+            Lorem.
+        </span>
+        <div>
+            <span>
+                Lorem.
+            </span>
+        </div>
+        <span>
+            Lorem.
+        </span>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let s = "java";
-        let skip = "script";
-        let index = 1;
-
+        $("span").first().addClass("red");
+        $("span").last().addClass("blue");
+        
+        $("span").eq(1).addClass("green"); //index 처럼 0부터 시작함 
     </script>
 </body>
 </html>

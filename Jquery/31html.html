@@ -8,14 +8,19 @@
     <style>
     </style>
 <body>
-    
+    <!-- input#input1+h1#head$*2 -->
+    <input type="text" id="input1" size="300px">
+    <h1 id="head1"></h1>
+    <h1 id="head2"></h1>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let s = "java";
-        let skip = "script";
-        let index = 1;
-
+        $("#input1").keyup(function (e) {
+            let text = $(this).val();
+            $("#head1").text(text); //전체 텍스트로 분석되어 <br>써도 보임 
+            $("#head2").html(text); //html 코드로 분선되어 <br> 같은거 입력시 안보임
+        })
     </script>
 </body>
 </html>

@@ -8,14 +8,29 @@
     <style>
     </style>
 <body>
-    
+    <input type="text" id="input1">
+    <ul id="list1"></ul>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let s = "java";
-        let skip = "script";
-        let index = 1;
+     $("#input1").keyup(function(e) {
+        if (e.key === "Enter") { //엔터키 확인
+            let liElem = $("<li>"); //liElem 변수에 <li>태그 삽임
+            liElem.text($(this).val()); //luElem text에 = <li>에 입력된 이값 저장
 
+            let removeButton = $("<button>X</button>"); //button 객체 생성 변수
+            liElem.append(removeButton); //removeButton 생성 
+
+            $("#list1").append(liElem); //list1 class 에 값과 태그값이 저장된 liElem 생성
+
+            $(this).val(""); //기존창 ""로 초기화 
+
+            //x누르면 삭제되게
+            $("button").click(function () { //button click Event 생성
+                $(this).parent().remove();  // 부모객체로 선택자 확인 
+            })
+        }
+    });
     </script>
 </body>
 </html>

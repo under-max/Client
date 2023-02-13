@@ -8,14 +8,30 @@
     <style>
     </style>
 <body>
-    
+    <!-- a#link$*3>lorem1 -->
+    <a href="https://www.daum.net" id="link1" target="_blank">
+        Lorem.
+    </a>
+    <a href="https://www.naver.com" id="link2" title="네이버 링크">
+        Perferendis.
+    </a>
+    <a href="https://www.google.com" id="link3">
+        Vel.
+    </a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let s = "java";
-        let skip = "script";
-        let index = 1;
+        let attr1 = $("#link1").attr("href");
+        console.log(attr1);
 
+        console.log($("#link2").attr("href"));
+        console.log($("#link3").attr("href"));
+
+        //link1 요소의 target 속성 값 출력
+        console.log($("#link1").attr("target"));
+
+        //link2 요소의 title 속성값 출력
+        console.log($("#link2").attr("title"));
     </script>
 </body>
 </html>

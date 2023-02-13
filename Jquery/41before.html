@@ -8,14 +8,35 @@
     <style>
     </style>
 <body>
+    <input type="text" id="input1" placeholder="텍스트를 입력하세요">
+    <ol id="list1">
+        <li>
+            Lorem.
+        </li>
+    </ol>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let s = "java";
-        let skip = "script";
-        let index = 1;
-
+        // $("#input1").keyup(function (e) {
+        //     if(e.key === "Enter"){ //Enter 키 입력 모션 확인 
+        //         let content = $("#input1").val(); // content 로 input1 의 값 받아옴 
+        //         let liElem = $("<li />") // liElem 으로 Tag명 지정 
+        //         liElem.text(content) //태그명 합침
+        //         $("#list1 >li:first-child").before(liElem) //li의 시작 태그 앞에 liElem 값 출력
+        //             //li:first-child li 의 자식중 제일 처음 값
+        //         $(this).val("") //초기화
+        //     }
+        // });
+        let count = 0
+        $("#input1").keyup(function (enter) {
+            if(enter.key === "Enter"){
+                let text = $("#input1").val();
+                $("#list1 > li:first-child").before("<li>"+text + "</li>");
+                
+                $(this).val("");
+            }
+        });
     </script>
 </body>
 </html>

@@ -8,14 +8,36 @@
     <style>
     </style>
 <body>
-    
+        <!-- div#res$*3>lorem1 -->
+        <div id="res1">
+            Lorem.
+        </div>
+        <div id="res2">
+            At.
+        </div>
+        <div id="res3">
+            Corporis.
+        </div>
+        <div id="res4">
+            Corporis.
+        </div>
+
+
+        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let s = "java";
-        let skip = "script";
-        let index = 1;
+        $("#res1").append("world");
+        $("#res2").append("<h1>hi</h1>");
 
+        let h2elem = document.createElement("h2");
+        h2elem.textContent = "world";
+        $("#res3").append(h2elem);
+
+        let h3elem = $("<h3>hello h3 </h3>"); //새로운 jquery 객체 생성 
+        $("#res4").append(h3elem);
+
+        h3elem.slideUp(3000);
     </script>
 </body>
 </html>
