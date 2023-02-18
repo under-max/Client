@@ -48,3 +48,6 @@ elif result >= 40 and result <= 50:
 else:
     print(f"you score is {result}")
 
+# 정답
+# name 1번과 name2번의 String 합으로 한 문자열로 만들어서 계산!
+
