@@ -1,0 +1,32 @@
+.black-nav {
+  display: flex;
+  background: black;
+  color: white;
+  width: 100%;
+  padding-left: 20px;
+  height: 15vm;
+}
+
+.App{
+  text-align: center;
+}
+
+.list{
+  padding-left: 20px;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+
+.modal{
+  margin-top: 20px;
+  padding: 20px;
+  background: #eee;
+  text-align: left;
+}
+
+
+
+
+
+
+
