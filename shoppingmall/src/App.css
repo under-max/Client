@@ -1,0 +1,13 @@
+.main-bg {
+  background-image: url('./img/main.jpg');
+  background-size: cover;
+  height: 50vh;
+  max-height: auto;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.App {
+  justify-items: center;
+}
